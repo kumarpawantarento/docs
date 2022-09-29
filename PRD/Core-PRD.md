@@ -1,33 +1,20 @@
-
-
-## **Niramaya**
-
-
 ## **Platform Core PRD**
 
 **User and Role Management**
 
 September 2022
 
-
 ## Table of Contents
-
 
 [TOC]
 
-
-
 ## Platform Overview
-
-
 
 1. Overall Objective and Users
 
 The Uttar Pradesh State Medical Faculty (UPSMF) wants to set up an online platform to manage multiple functions regarding educational training, assessments, and job placement of allied healthcare professionals (AHPs) such as nurses, paramedical staff, lab technicians etc. The overall objective of the platform is to improve the quality of AHP medical education in the state, and eventually, improve the overall quality of healthcare delivery. 
 
 Following entities will need to be onboarded onto the platform to achieve the platform’s objective:
-
-
 
 1. AHP course students
 2. Medical institutes
@@ -38,15 +25,11 @@ Following entities will need to be onboarded onto the platform to achieve the pl
 
 ADD following above or below:
 
-
-
 * Abbreviations (all abbreviations we use including CASA, NIC, etc)
 * Clarifications of entities - ex: Candidates can be students or professionals
 1. Modules and Functionalities
 
 Functionalities for the current roadmap of the platform have been identified, bucketed into 5 functional modules:
-
-
 
 1. **Rating and Affiliation** for regular verification and grading of institutes and enable transparent decision-making for prospective students during the admission process
 2. **Centralised Admissions** for prospective candidates looking to enrol in medical institutes for AHP courses (diploma / degree programs) to reduce the burden of institute-specific application process and remove discretion from the admissions process. 
