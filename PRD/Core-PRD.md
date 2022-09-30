@@ -1,14 +1,109 @@
-## **Platform Core PRD**
+# **Niramaya**
 
-**User and Role Management**
+
+# **Platform Core PRD**
+
+**Registries & Masters**
+
+**Entity & Role Management**
 
 September 2022
 
-## Table of Contents
 
-[TOC]
+## Glossary/ Acronyms_
+
+
+<table>
+  <tr>
+   <td>CB
+   </td>
+   <td>Capacity building 
+   </td>
+  </tr>
+  <tr>
+   <td>FRAC
+   </td>
+   <td>Framework of Roles, Activities and Competencies 
+   </td>
+  </tr>
+  <tr>
+   <td>iGOT
+   </td>
+   <td>Integrated Government Online Training 
+   </td>
+  </tr>
+  <tr>
+   <td>MCQ
+   </td>
+   <td>Multiple choice questions
+   </td>
+  </tr>
+  <tr>
+   <td>PIAA
+   </td>
+   <td>Proctored independent, authorised assessment
+   </td>
+  </tr>
+  <tr>
+   <td>PRD
+   </td>
+   <td>Product requirement document 
+   </td>
+  </tr>
+  <tr>
+   <td>QR
+   </td>
+   <td>Questions repository 
+   </td>
+  </tr>
+  <tr>
+   <td>QR_C
+   </td>
+   <td>Questions repository contributor
+   </td>
+  </tr>
+  <tr>
+   <td>QR_M
+   </td>
+   <td>Questions repository manager
+   </td>
+  </tr>
+  <tr>
+   <td>SOP
+   </td>
+   <td>Standard operating procedure 
+   </td>
+  </tr>
+  <tr>
+   <td>UPTSU
+   </td>
+   <td>Uttar Pradesh technical support unit
+   </td>
+  </tr>
+  <tr>
+   <td>UP SMF
+   </td>
+   <td>Uttar Pradesh State Medical Faculty
+   </td>
+  </tr>
+  <tr>
+   <td>NIC
+   </td>
+   <td>National Informatics Centre
+   </td>
+  </tr>
+  <tr>
+   <td>CASA
+   </td>
+   <td>Council Automation Smart Application
+   </td>
+  </tr>
+</table>
+
+
 
 ## Platform Overview
+
 
 1. Overall Objective and Users
 
@@ -16,20 +111,22 @@ The Uttar Pradesh State Medical Faculty (UPSMF) wants to set up an online platfo
 
 Following entities will need to be onboarded onto the platform to achieve the platform’s objective:
 
-1. AHP course students
-2. Medical institutes
-3. Experienced AHPs (nurses, paramedical staff etc.)
-4. Hospitals or healthcare centres
-5. UP SMF and other allied departments
-6. Field assessors (for institute verification and assessments)
 
-ADD following above or below:
 
-* Abbreviations (all abbreviations we use including CASA, NIC, etc)
-* Clarifications of entities - ex: Candidates can be students or professionals
+1. Candidates - Students enrolled in GNM/ANM courses & professionals 
+2. Institutes - All government & private medical institutes offering GNM/ANM courses
+3. Workplace - Hospitals or healthcare centres where the graduating students are or can be employed
+4. Regulatory Body - UP SMF, UP-TSU and other allied departments
+5. QR_C
+6. QR_M
+7. PIAA Setter
+8. PIAA Nodal
+9. Medical & Non Medical Assessors (for institute verification and ratings)
 1. Modules and Functionalities
 
 Functionalities for the current roadmap of the platform have been identified, bucketed into 5 functional modules:
+
+
 
 1. **Rating and Affiliation** for regular verification and grading of institutes and enable transparent decision-making for prospective students during the admission process
 2. **Centralised Admissions** for prospective candidates looking to enrol in medical institutes for AHP courses (diploma / degree programs) to reduce the burden of institute-specific application process and remove discretion from the admissions process. 
@@ -37,12 +134,14 @@ Functionalities for the current roadmap of the platform have been identified, bu
 4. **Verifiable Resume** to enable ease of access and verification of a professional’s education and work history when applying for jobs in hospitals and health centres
 5. **Aspirational Profession **module encompasses two key functionalities - (1) a job discovery and tracking platform to enable institute graduates to search for and apply for jobs, and (2) a learning management system (LMS) to enable access to online skilling courses to bridge the competency gaps identified as part of the competency based assessments
 
-The Q1 scope includes setting up the registries & masters in the core, assessments module & LMS module.
-
 
 ## Platform Architecture
 
 A layered architecture is envisioned for building the platform with a **_Core Layer _**including the registries, credentials and masters as per defined standards and specifications. Above that is the **_Transaction Layer _**with transactional event data storage, intelligence engine, and communication engine. The **_Application Layer_** includes the five functional modules (described in the previous section) and platform UI. An open API layer connects the core with the application layer. 
+
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image1.png "image_tooltip")
@@ -51,6 +150,10 @@ A layered architecture is envisioned for building the platform with a **_Core La
 The platform will be built leveraging open-source [Sunbird](https://www.sunbird.org/) building blocks, which form the base of Ministry of Education’s (MoE) DIKSHA platform and Department of Personnel and Training’s (DoPT) human resource management platform, iGOT. Having Sunbird form the base of the UP HRH platform, will allow it to be contributed back to Sunbird repository for use by any other government entity in the country. 
 
 The diagram below highlights the Sunbird building blocks that will be used to build different components of the platform. 
+
+
+
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image2.png "image_tooltip")
@@ -326,7 +429,6 @@ The following table summarises the different blocks that will form part of the p
 ## User Registries
 
 
-
 1. Registry Entities
 
 All user entities will be registry compliant to ensure privacy of users’ personal information. Registries allow each user to be in control of their data and can customise which applications (including the frontend of the platform) can access their personal details. A registry-compliant construct ensures that registry specific functionalities can be activated for all modules of the platform. 
@@ -339,7 +441,7 @@ Currently, a UPSMF portal - CASA, ([https://upsmfac.org/](https://upsmfac.org/))
 
 Each user on the platform will be part of a registry and will have a unique process of getting onboarded (access & authentication) to the platform. Different workflows have been defined to enable this onboarding process.
 
-The following [approach](https://app.diagrams.net/#G12h9tK-OHANrqlMFefe2mpg0cVStRokC6) will be followed to ensure a **_single source of truth _**for entity information and **_registry compliance _**for the platform overall. 
+The following [approach](https://app.diagrams.net/#G12h9tK-OHANrqlMFefe2mpg0cVStRokC6) will be followed to ensure a **_single source of truth _**for1, 2,entity information and **_registry compliance _**for the platform overall. 
 
 
 <table>
@@ -393,6 +495,36 @@ Below are the key registry entities with a link to their proposed schema, functi
   <tr>
    <td>1
    </td>
+   <td><strong>Regulatory Body</strong>
+   </td>
+   <td>Currently does not exist
+   </td>
+   <td>TBD
+   </td>
+   <td><strong>Create: </strong>
+<p>
+- Entities in the Assessments Module : QR_C, QR_M, PIAA Setter, PIAA Nodal
+<p>
+- Issue certificates to candidates who have successfully passed assessments
+<p>
+<strong>Read:</strong>
+<p>
+- State/District level analytics
+<p>
+- Telemetry events as defined
+<p>
+<strong>Update:</strong>
+<p>
+- Entity - Role Mapping - This control will be with the regulatory body
+<p>
+<strong>Delete:</strong>
+<p>
+- Cannot delete but can mark an entity - role inactive
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
    <td><strong>Candidate <em>(Part of User DB)</em></strong>
    </td>
    <td><em>Master_Student</em>
@@ -420,7 +552,7 @@ Below are the key registry entities with a link to their proposed schema, functi
    </td>
   </tr>
   <tr>
-   <td>2
+   <td>3
    </td>
    <td><strong>Institute</strong>
    </td>
@@ -448,7 +580,7 @@ Below are the key registry entities with a link to their proposed schema, functi
    </td>
   </tr>
   <tr>
-   <td>3
+   <td>4
    </td>
    <td><strong>Faculty <em>(Part of User DB)</em></strong>
    </td>
@@ -458,7 +590,7 @@ Below are the key registry entities with a link to their proposed schema, functi
    </td>
    <td><a href="https://docs.google.com/spreadsheets/d/13i7V7Az2D9mg2_se0j8QzQPXEKuYMpO1ARGMKH0ur6o/edit#gid=1283869895">Link</a>
    </td>
-   <td><strong>Create</strong>: No creation allowed, data pulled in from state database (provided by institute)
+   <td><strong>Create</strong>: No creation allowed, data pulled in fromCASA
 <p>
 <strong>Read</strong>: Allow admin (state dept.) to view all details through search or filter options (attributes indicated in schema)
 <p>
@@ -472,7 +604,7 @@ Below are the key registry entities with a link to their proposed schema, functi
    </td>
   </tr>
   <tr>
-   <td>4
+   <td>5
    </td>
    <td><strong>Workplace</strong>
    </td>
@@ -494,46 +626,168 @@ Below are the key registry entities with a link to their proposed schema, functi
    </td>
   </tr>
   <tr>
-   <td>5
+   <td>6
    </td>
-   <td><strong>Third Party Entities</strong>
+   <td><strong>QR_C</strong>
    </td>
-   <td>Admin approved
+   <td>Currently does not exist
    </td>
    <td>TBD
    </td>
-   <td>There will be certain module specific entities which will be onboarded on the system by the admin. These entities will not be a part of the CASA system.
+   <td><strong>Create: </strong>
 <p>
-In Assessments, there will be QR_C, QR_M, PIAA Setter & PIAA_Nodal. And in Ratings, there will be a medical assessor and a non medical assessor. 
+- Questions in the Assessments module
 <p>
-<strong>Create: </strong>Admin should be able to onboard these third party entities onto the platform through a predefined workflow.
+- Bulk upload questions through a csv
 <p>
-<strong>Read</strong>: Allow admin (state dept.) to view all details through search or filter options (attributes indicated in schema)
+<strong>Read</strong>:
 <p>
-<strong>Update</strong>: Only the admin is able to update certain attributes in the schema. These are:
+- Questions that he has created
 <p>
-- contact details: email, mobile number
+- Edits made by QR_M
 <p>
-- Location details
+- Summary of submitted, approved & rejected questions
 <p>
-- Role details
+<strong>Update</strong>: 
 <p>
-<strong>Delete</strong>: Can delete or reassign roles to users
+- Questions based on review suggestions provided by QR_M
+<p>
+<strong>Delete</strong>: 
+<p>
+- Self created questions before submitting them for review
+   </td>
+  </tr>
+  <tr>
+   <td>7
+   </td>
+   <td><strong>QR_M</strong>
+   </td>
+   <td>Currently does not exist 
+   </td>
+   <td>TBD
+   </td>
+   <td><strong>Create: </strong>
+<p>
+- Does not create anything
+<p>
+<strong>Read</strong>:
+<p>
+- Questions that QR_C  has created
+<p>
+- Edits made by QR_C
+<p>
+- Summary of submitted, approved & rejected questions
+<p>
+<strong>Update</strong>: 
+<p>
+- Edit questions submitted by QR_C
+<p>
+- Reject questions submitted by QR_C
+<p>
+- Adds comments for rejected questions
+<p>
+<strong>Delete</strong>: 
+<p>
+- Cannot delete - can only reject 
+   </td>
+  </tr>
+  <tr>
+   <td>8
+   </td>
+   <td><strong>PIAA Setter</strong>
+   </td>
+   <td>Currently does not exist
+   </td>
+   <td>TBD
+   </td>
+   <td><strong>Create: </strong>
+<p>
+- Create blueprint of assessments by defining the competency, competency levels to be tested
+<p>
+<strong>Read</strong>:
+<p>
+- View the assessments that have been created
+<p>
+<strong>Update</strong>: 
+<p>
+- Edit the blueprint of assessments
+<p>
+<strong>Delete</strong>: 
+<p>
+- Cannot delete
+   </td>
+  </tr>
+  <tr>
+   <td>9
+   </td>
+   <td><strong>PIAA Nodal</strong>
+   </td>
+   <td>Currently does not exist
+   </td>
+   <td>TBD
+   </td>
+   <td><strong>Create: </strong>
+<p>
+- Begin the assessment for a candidate
+<p>
+- Certificates for the candidates
+<p>
+<strong>Read</strong>:
+<p>
+- View the available assessments
+<p>
+<strong>Update</strong>: 
+<p>
+- Cannot edit
+<p>
+<strong>Delete</strong>: 
+<p>
+- Cannot delete
+   </td>
+  </tr>
+  <tr>
+   <td>10
+   </td>
+   <td><strong>Medical Assessor</strong>
+   </td>
+   <td>Currently does not exist
+   </td>
+   <td>TBD
+   </td>
+   <td rowspan="2" ><strong>Update:</strong>
+<p>
+- Can view and administer assessments
+<p>
+- Can enter student performance in the assessment
+   </td>
+  </tr>
+  <tr>
+   <td>11
+   </td>
+   <td><strong>Non Medical Assessor</strong>
+   </td>
+   <td>Currently does not exist
+   </td>
+   <td>TBD
    </td>
   </tr>
 </table>
 
 
-There will be different workflows to onboard users onto the platform. These workflows will be defined
 
-&lt; INSERT BLOCK DIAGRAM >
+## Entity Role Management 
 
+An ** entity **is any individual or organisation that will be using the platform.
 
-## Roles
+**Permission** is an action that an entity will be entitled to perform.
 
-**Ideal State**: Roles are defined by the **_admin_** and each role is mapped to a series of permissions (global or module specific). Each user of the platform can be mapped to one or multiple roles and all permissions mapped to these roles will be allowed.  
+**Role **is a group of permissions bunched together. **Roles **can be global or module specific.
 
-Roles will have varying functions depending on the module. The following table lists the modules, suggested applicable roles and suggested authorization for these roles as part of the module.
+An **entity **will be mapped to one or more **roles **and each role will have a set of one or more **permissions **within it.
+
+This list of permissions, roles & their mapping to entities only covers the Assessments & Ratings modules currently and will expand as we scope out more modules.
+
+**Dictionary of roles & permissions:**
 
  
 
@@ -544,9 +798,11 @@ Roles will have varying functions depending on the module. The following table l
    </td>
    <td><strong>Permission</strong>
    </td>
+   <td><strong>Module</strong>
+   </td>
   </tr>
   <tr>
-   <td>Admin
+   <td>Super Admin
    </td>
    <td>1. Can view state level analytics
 <p>
@@ -555,42 +811,60 @@ Roles will have varying functions depending on the module. The following table l
 3. Can set/reset role level permissions at a module level
 <p>
 4. View all transactional data
+<p>
+5. Perform entity - role management
+<p>
+6. Can issue certificates to candidates undertaking assessments
+   </td>
+   <td>Across modules
    </td>
   </tr>
   <tr>
-   <td>Admin
+   <td>Admin_E Cred
    </td>
-   <td>1. Can create data entry forms for ratings
+   <td>1. Can enter work experience / educational details for a candidate
+   </td>
+   <td>E credentials
+   </td>
+  </tr>
+  <tr>
+   <td>Admin_Assessments
+   </td>
+   <td>1. Can issue certificates to candidates undertaking assessments
+   </td>
+   <td>Assessments
+   </td>
+  </tr>
+  <tr>
+   <td>Admin_LMS
+   </td>
+   <td>1. Can view courses curated by content providers
 <p>
-2. Can assign data entry forms to medical/non medical assessors
+2. Can review course and approve for publishing
 <p>
-3. Can view / edit data entry forms received by medical/non medical assessors
+3. Can return / reject course in case of improper tagging / content
+   </td>
+   <td>Aspirational Profession (LMS)
+   </td>
+  </tr>
+  <tr>
+   <td>Admin_Ratings
+   </td>
+   <td>1. Can create data entry forms
 <p>
-4. Can schedule on-ground visits 
+2. Can assign data entry forms
+<p>
+3. Can view / edit data entry forms  
+<p>
+4. Can schedule on-ground visits
 <p>
 5. Can reject / request for update of forms
    </td>
-  </tr>
-  <tr>
-   <td>Institute
-   </td>
-   <td>1. Can view / edit assigned data entry forms
-<p>
-2. Can update forms returned by admin  
+   <td>Ratings & Affiliation
    </td>
   </tr>
   <tr>
-   <td>Medical / Non Medical Assessor
-   </td>
-   <td>1. Can view / edit assigned data entry forms
-<p>
-2. Can view schedule of visit
-<p>
-3. Can provide feedback for ratings in the module
-   </td>
-  </tr>
-  <tr>
-   <td>QR_C
+   <td>Repository Contributor
    </td>
    <td>1. Can create new question-sets for assessment
 <p>
@@ -600,9 +874,11 @@ Roles will have varying functions depending on the module. The following table l
 <p>
 4. Tag a question to competency level
    </td>
+   <td rowspan="5" >Assessments
+   </td>
   </tr>
   <tr>
-   <td>QR_M
+   <td>Repository Manager
    </td>
    <td>1. Can view questions submitted by QR_C
 <p>
@@ -614,7 +890,7 @@ Roles will have varying functions depending on the module. The following table l
    </td>
   </tr>
   <tr>
-   <td>PIAA Setter
+   <td>Question Paper Setter
    </td>
    <td>1. Can set the blueprint of assessment
 <p>
@@ -622,7 +898,7 @@ Roles will have varying functions depending on the module. The following table l
    </td>
   </tr>
   <tr>
-   <td>PIAA Nodal
+   <td>Test centre Nodal
    </td>
    <td>1. Can start an assessment for a candidate
 <p>
@@ -630,51 +906,33 @@ Roles will have varying functions depending on the module. The following table l
    </td>
   </tr>
   <tr>
-   <td>Candidate
+   <td>Test Taker
    </td>
    <td>1. Can start a self assessment by entering defined parameters (Eg. roll number/ DOB)
 <p>
-2. View questions in assigned set
+2. Can view questions in assigned set
 <p>
-3. View the correct answers to assessments
+3. Can view the correct answers to assessments
 <p>
-4. View the marks awarded for each assessment
+4. Can view the marks awarded for each assessment
 <p>
-5. View/Download a report card for self assessment & a certificate for proctored assessment at the PIAA centre
+5. Can view/Download a report card for self assessment & a certificate for proctored assessment at the PIAA centre
 <p>
-6. Report discrepancy in marks
+6. Can report discrepancy in marks
    </td>
   </tr>
   <tr>
-   <td>Admin
+   <td>E cred verifier
    </td>
-   <td>1. Can issue certificates
+   <td>1. Can enter candidates’ workplace & institute details
 <p>
-2. Can onboard third party entities onto the platform through defined workflow
-<p>
-3. Can reassign roles of users within the module
+2. Can view details contained in the verified resume of a candidate
+   </td>
+   <td rowspan="3" >E Credentials
    </td>
   </tr>
   <tr>
-   <td>Admin
-   </td>
-   <td>1. Can define parameters to be enabled as part of the verifiable resume
-   </td>
-  </tr>
-  <tr>
-   <td>Hospital / Institute
-   </td>
-   <td>1. Can enter work experience / educational details for a candidate
-   </td>
-  </tr>
-  <tr>
-   <td>Hospital / Institute
-   </td>
-   <td>1. Can view details contained in the verified resume of a candidate
-   </td>
-  </tr>
-  <tr>
-   <td>Hospital
+   <td>Job curator
    </td>
    <td>1. Can post job vacancies on the portal
 <p>
@@ -682,19 +940,21 @@ Roles will have varying functions depending on the module. The following table l
    </td>
   </tr>
   <tr>
-   <td>Institute
+   <td>Placement verifier
    </td>
    <td>1. Can provide details of batch placement 
    </td>
   </tr>
   <tr>
-   <td>Candidate
+   <td>Job Seeker
    </td>
    <td>1. Can search for posted jobs
 <p>
 2. Can apply to posted jobs
 <p>
 3. Can report status of successful employment
+   </td>
+   <td rowspan="3" >Aspirational Profession (LMS)
    </td>
   </tr>
   <tr>
@@ -706,7 +966,7 @@ Roles will have varying functions depending on the module. The following table l
    </td>
   </tr>
   <tr>
-   <td>Candidate
+   <td>Learner
    </td>
    <td>1. Can register on the platform and add their Position (FRAC)
 <p>
@@ -723,20 +983,141 @@ Roles will have varying functions depending on the module. The following table l
 7. Can receive and save a badge to profile on course completion
    </td>
   </tr>
+</table>
+
+
+**Entity - Role Mapping at a Module Level**
+
+
+<table>
   <tr>
-   <td>Admin
+   <td><strong>Roles</strong>
    </td>
-   <td>1. Can view courses curated by content providers
-<p>
-2. Can review course and approve for publishing
-<p>
-3. Can return / reject course in case of improper tagging / content
+   <td><strong>Entity</strong>
+   </td>
+   <td><strong>Module</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Super Admin
+   </td>
+   <td>Regulatory body
+   </td>
+   <td>Across Modules
+   </td>
+  </tr>
+  <tr>
+   <td>Admin_E Cred
+   </td>
+   <td>Regulatory body
+   </td>
+   <td>E Credentials
+   </td>
+  </tr>
+  <tr>
+   <td>Admin_Assessments
+   </td>
+   <td>Regulatory body
+   </td>
+   <td>Assessments
+   </td>
+  </tr>
+  <tr>
+   <td>Admin_LMS
+   </td>
+   <td>Regulatory body
+   </td>
+   <td>Aspiration Profession 
+   </td>
+  </tr>
+  <tr>
+   <td>Admin_Ratings
+   </td>
+   <td>Regulatory body
+   </td>
+   <td>Ratings & Affiliation
+   </td>
+  </tr>
+  <tr>
+   <td>Repository Contributor
+   </td>
+   <td>QR_C
+   </td>
+   <td rowspan="5" >Assessments
+   </td>
+  </tr>
+  <tr>
+   <td>Repository Manager
+   </td>
+   <td>QR_M
+   </td>
+  </tr>
+  <tr>
+   <td>Question Paper Setter
+   </td>
+   <td>PIAA Setter
+   </td>
+  </tr>
+  <tr>
+   <td>Test centre Nodal
+   </td>
+   <td>PIAA Nodal
+   </td>
+  </tr>
+  <tr>
+   <td>Test Taker
+   </td>
+   <td>Candidate
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >E Cred Verifier
+   </td>
+   <td>Institute
+   </td>
+   <td rowspan="4" >E credentials
+   </td>
+  </tr>
+  <tr>
+   <td>Workplace
+   </td>
+  </tr>
+  <tr>
+   <td>Job Curator
+   </td>
+   <td>Workplace
+   </td>
+  </tr>
+  <tr>
+   <td>Placement Verifier
+   </td>
+   <td>Institute
+   </td>
+  </tr>
+  <tr>
+   <td>Job Seeker
+   </td>
+   <td>Candidate
+   </td>
+   <td rowspan="3" >Aspirational Profession (LMS)
+   </td>
+  </tr>
+  <tr>
+   <td>Content Provider
+   </td>
+   <td>Regulatory Body
+   </td>
+  </tr>
+  <tr>
+   <td>Learner
+   </td>
+   <td>Candidate
    </td>
   </tr>
 </table>
 
 
-**Module level - Role entity mapping**
+The focus in the Core Module for Entity - Role - Permission mapping is on the Assessments module that is in scope for Q1. The other mappings will get fleshed out more when the PRDs and workflows for the other modules are taken up.
 
 
 ## Masters
@@ -883,6 +1264,10 @@ Professional competence of each AHP student / faculty / professional will be tra
 2. Rules for Competency Management
 
 
+
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
 ![alt_text](images/image3.png "image_tooltip")
 
 
@@ -963,6 +1348,110 @@ The following table lists down the masters which will store all competency data 
   </tr>
 </table>
 
+
+
+## Milestone Phasing
+
+
+<table>
+  <tr>
+   <td>#
+   </td>
+   <td>Category
+   </td>
+   <td>Phase
+   </td>
+   <td>Milestones
+   </td>
+   <td>Sep
+   </td>
+   <td>Oct
+   </td>
+   <td>Nov
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="7" >1
+   </td>
+   <td rowspan="7" ><strong>Platform Core</strong>
+   </td>
+   <td rowspan="3" >Requirements
+   </td>
+   <td>Define Core PRD
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Define schema of registries and databases
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Define competency framework
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="4" >Setup
+   </td>
+   <td>Setup Sunbird Ed (all building blocks)
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Setup registries on Sunbird RC
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Setup databases for common masters (location etc.)
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td>Sunbird Knowlg configured for tiered competency framework
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+
+
+In the Q1 scope of assessments, the competency masters will be uploaded in the backend by the engineering team.
 
 
 <!-- Footnotes themselves at the bottom. -->
